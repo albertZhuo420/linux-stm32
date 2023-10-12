@@ -18,4 +18,7 @@ obj-$(CONFIG_I2C_STUB)		+= i2c-stub.o
 obj-$(CONFIG_I2C_SLAVE_EEPROM)	+= i2c-slave-eeprom.o
 obj-$(CONFIG_I2C_SLAVE_TESTUNIT)	+= i2c-slave-testunit.o
 
+# intel bmc 中的 aspeed i2c master 转 slave 的驱动
+obj-$(CONFIG_I2C_SLAVE_MQUEUE)	+= i2c-slave-mqueue.o
+
 ccflags-$(CONFIG_I2C_DEBUG_CORE) := -DDEBUG
